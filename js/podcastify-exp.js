@@ -1,5 +1,5 @@
 javascript:(function(){
-	import clippy from './common/clippy';
+	import {clippy} from './common/clippy';
 	let podcast, podcasturl, itunes, stitcher, spotify, castbox, rss;
 	const url = window.location.toString();
 	const headline = document.getElementsByTagName('h1')[1].textContent;
