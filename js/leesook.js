@@ -19,3 +19,4 @@ const title = document.title;
 const headline = title.slice(0,-6);
 const leesook = decodeURIComponent('<div class%3D"lees-ook">Lees ook <a href%3D"' + url +'">' + headline + '<%2Fa><%2Fdiv>');
 clippy(leesook);
+explain();
