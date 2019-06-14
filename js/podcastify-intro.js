@@ -9,7 +9,10 @@ javascript:(function(){
 		body.removeChild(copyFrom);
 	};
 	const explain = function() {
-		if (localStorage.getItem('seen_intro_podcast').value != 'true' ) {
+		if (localStorage.getItem('seen_intro_podcast',true)) {
+			console.log('has seen intro')
+		}
+		else {
 				alert('De code is gekopieerd. Plak die nu met Ctrl-V of Command-V (Mac) in het postje.\n\nDEZE MELDING VERSCHIJNT EENMALIG!');
 				localStorage.setItem('seen_intro_podcast', 'true');
 			}
