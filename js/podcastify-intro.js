@@ -10,8 +10,8 @@ javascript:(function(){
 	};
 	const explain = function() {
 		if (!localStorage.getItem('seen_intro_podcast')) {
-			if (alert('De code is gekopieerd. Plak die nu met Ctrl-V of Command-V (Mac) in het postje. DEZE MELDING VERSCHIJNT EENMALIG!')) {
-				localStorage.setItem('seen_intro_podcast', 'true');
+			alert('De code is gekopieerd. Plak die nu met Ctrl-V of Command-V (Mac) in het postje. DEZE MELDING VERSCHIJNT EENMALIG!');
+			localStorage.setItem('seen_intro_podcast', 'true');
 			}
 		}		
 	};
