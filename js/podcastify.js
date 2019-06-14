@@ -7,7 +7,16 @@ javascript:(function(){
 		copyFrom.select();
 		document.execCommand('copy');
 		body.removeChild(copyFrom);
-		};
+	};
+	const explain = function() {
+		if (localStorage.getItem('seen_intro_podcast',true)) {
+			console.log('has seen intro')
+		}
+		else {
+				alert('De code is gekopieerd. Plak die nu met Ctrl-V (Windows, Linux) of Command-V (Mac) in het postje.\n\nDEZE MELDING VERSCHIJNT EENMALIG.\nDe volgende keer dat je deze knop gebruikt, kun je dus gewoon de code plakken zonder eerst deze popup te moeten wegklikken.');
+				localStorage.setItem('seen_intro_podcast', 'true');
+			}
+	};		
 	let podcast, podcasturl, itunes, stitcher, spotify, castbox, rss;
 	const url = window.location.toString();
 	const headline = document.getElementsByTagName('h1')[1].textContent;
@@ -44,4 +53,5 @@ javascript:(function(){
 	const episode = document.querySelector('.art19-web-player').getAttribute('data-episode-id');
 	const embedcode = `<div><em>Luister ook naar <a href="${url}">deze aflevering</a> van onze podcastserie <a href="${podcasturl}">${podcast}</a>: ${headline}<br /><span style="font-size: smaller;">U kunt zich ook <a href="${itunes}" rel="noopener" target="_blank">abonneren via Apple Podcasts</a>, <a href="${stitcher}" rel="noopener" target="_blank">Stitcher</a>, <a href="${spotify}" rel="noopener" target="_blank">Spotify</a>, <a href="${castbox}">Castbox</a> of <a href="${rss}" rel="noopener" target="_blank">RSS</a>.</em><link href="https://web-player.art19.com/assets/current.css" media="screen" rel="stylesheet" type="text/css"><script src="https://web-player.art19.com/assets/current.js" type="text/javascript"></script><div class="art19-web-player awp-medium awp-theme-light-custom" data-episode-id="${episode}" data-primary-color="#333333"></div></div>`;
 	clippy(embedcode);
+	explain();
 })();
