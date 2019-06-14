@@ -10,11 +10,10 @@ javascript:(function(){
 	};
 	const explain = function() {
 		if (!localStorage.getItem('seen_intro_podcast')) {
-			alert('De code is gekopieerd. Plak die nu met Ctrl-V of Command-V (Mac) in het postje. DEZE MELDING VERSCHIJNT EENMALIG!');
-			localStorage.setItem('seen_intro_podcast', 'true');
+				alert('De code is gekopieerd. Plak die nu met Ctrl-V of Command-V (Mac) in het postje.\n\nDEZE MELDING VERSCHIJNT EENMALIG!');
+				localStorage.setItem('seen_intro_podcast', 'true');
 			}
-		}		
-	};
+	};		
 	let podcast, podcasturl, itunes, stitcher, spotify, castbox, rss;
 	const url = window.location.toString();
 	const headline = document.getElementsByTagName('h1')[1].textContent;
