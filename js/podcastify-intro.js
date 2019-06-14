@@ -9,9 +9,9 @@ javascript:(function(){
 		body.removeChild(copyFrom);
 	};
 	const explain = function() {
-		if (!Storage.getItem('seen_intro_podcast') {
+		if (!localStorage.getItem('seen_intro_podcast')) {
 			if (alert('De code is gekopieerd. Plak die nu met Ctrl-V of Command-V (Mac) in het postje. DEZE MELDING VERSCHIJNT EENMALIG!')) {
-				Storage.setItem('seen_intro_podcast', 'true')
+				localStorage.setItem('seen_intro_podcast', 'true')
 			}
 		}		
 	};
