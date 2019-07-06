@@ -10,7 +10,8 @@ copyFrom.setAttribute('style', 'color: #000; background: #fff; border-style: sol
 copyFrom.setAttribute('id', 'copyfrom');
 let explain = document.createElement('p');
 explain.setAttribute('style', 'width: 600px; margin: 25px auto 10px auto;');
-explain.innerText = 'Druk op de knop om de code te kopiëren en plak die vervolgens in WordPress/Honk op de gewnste plek in het artikel:';
+explain.innerText = 'Druk op de knop om de code te kopiëren en plak die vervolgens in WordPress/Honk op de gewenste plek in het artikel:';
+copyFrom.appendChild(explain);
 /*actual code*/
 let code = document.createElement('p');
 code.setAttribute('style', 'font-family: monospace; width: 600px; margin: 5px auto 10px auto; border-style: dotted; border-width: 1px; border-color: #ccc;');
