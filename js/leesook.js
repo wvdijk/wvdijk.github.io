@@ -6,7 +6,7 @@ const LEESOOK = decodeURIComponent(`<div class="lees-ook">Lees ook <a href="${UR
 
 /*create layer*/
 let copyFrom = document.createElement('div');
-copyFrom.setAttribute('style', 'color: #000; background: #fff; border-style: solid; border-width: 2px; border-color: #000; position: absolute; width: 650px; top: 100px; left: 100px; z-index: 99 !important;');
+copyFrom.setAttribute('style', 'color: #000; background: #fff; border-style: solid; border-width: 2px; border-color: #000; position: absolute; width: 650px; top: 100px; left: 100px; z-index: 999 !important;');
 copyFrom.setAttribute('id', 'copyfrom');
 let explain = document.createElement('p');
 explain.setAttribute('style', 'width: 600px; margin: 25px auto 10px auto;');
