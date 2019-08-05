@@ -1,7 +1,6 @@
 /*create code*/
 const URL = window.location.toString();
-const TITLE = document.title;
-const HEADLINE = TITLE.slice(0,-6);
+const HEADLINE = document.title.slice(0,-6);
 const LEESOOK = decodeURIComponent(`<div class="lees-ook">Lees ook <a href="${URL}">${HEADLINE}</a></div>`);
 
 /*create layer*/
