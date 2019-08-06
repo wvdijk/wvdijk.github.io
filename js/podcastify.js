@@ -33,7 +33,11 @@ if (document.querySelector('.in-rubric-haagse-zaken')) {
 	alert('Deze podcast (her)ken ik niet...');
 }
 const EPISODE = document.querySelector('.art19-web-player').getAttribute('data-episode-id');
-const EMBEDCODE = `<div><em>Luister ook naar <a href="${URL}">deze aflevering</a> van onze podcastserie <a href="${podcasturl}">${podcast}</a>: ${HEADLINE}<br /><span style="font-size: smaller;">U kunt zich ook <a href="${itunes}" rel="noopener" target="_blank">abonneren via Apple Podcasts</a>, <a href="${stitcher}" rel="noopener" target="_blank">Stitcher</a>, <a href="${spotify}" rel="noopener" target="_blank">Spotify</a>, <a href="${castbox}">Castbox</a> of <a href="${rss}" rel="noopener" target="_blank">RSS</a>.</em><link href="https://web-player.art19.com/assets/current.css" media="screen" rel="stylesheet" type="text/css"><script src="https://web-player.art19.com/assets/current.js" type="text/javascript"></script><div class="art19-web-player awp-medium awp-theme-light-custom" data-episode-id="${EPISODE}" data-primary-color="#333333"></div></div>`;
+const EMBEDCODE = `<div style="font-family: LFT Etica, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif; font-style: italic;"><p style="margin-bottom: 1.1em;">Luister ook naar <a href="${URL}">deze aflevering</a> van onze podcastserie <a href="${podcasturl}">${podcast}</a>: ${HEADLINE}</p>
+<link href="https://web-player.art19.com/assets/current.css" media="screen" rel="stylesheet" type="text/css">
+<script src="https://web-player.art19.com/assets/current.js" type="text/javascript"></script>
+<div class="art19-web-player awp-medium awp-theme-light-custom" data-episode-id="${EPISODE}" data-primary-color="#333333"></div>
+<span style="font-size: smaller;">U kunt zich ook <a href="${itunes}" rel="noopener" target="_blank">abonneren via Apple Podcasts</a>, <a href="${stitcher}" rel="noopener" target="_blank">Stitcher</a>, <a href="${spotify}" rel="noopener" target="_blank">Spotify</a>, <a href="${castbox}">Castbox</a> of <a href="${rss}" rel="noopener" target="_blank">RSS</a>.</div>`;
 
 /*create layer*/
 let copyFrom = document.createElement('div');
