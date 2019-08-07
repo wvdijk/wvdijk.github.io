@@ -7,6 +7,6 @@ let getFBLnk = function() {
 	let d = date.getDate();
 	d < 10 ? d = `0${d}` : d = d;
 	let utm = `${url}?utm_source=social&utm_medium=facebook&utm_campaign=facebook&utm_term=${y}${m}${d}`;
-	prompt('Gebruik deze link in je post op Facebook:');
+	prompt('Gebruik deze link in je post op Facebook:', utm);
 	};
 getFBLnk();
