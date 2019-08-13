@@ -41,18 +41,12 @@ const EMBEDCODE = `<div style="font-family: LFT Etica, Lucida Sans, Lucida Grand
 
 /*create layer*/
 let copyFrom = document.createElement('div');
-copyFrom.setAttribute('style', 'color: #000; background: #fff; border-style: solid; border-width: 2px; border-color: #000; position: absolute; width: 850px; top: 100px; left: 100px; z-index: 999 !important;');
+copyFrom.setAttribute('style', 'color: #000; background: #fff; border-style: solid; border-width: 2px; border-color: #000; position: fixed; width: 850px; top: 100px; left: 100px; z-index: 999 !important;');
 copyFrom.setAttribute('id', 'copyfrom');
 let explain = document.createElement('p');
 explain.setAttribute('style', 'width: 800px; margin: 25px auto 10px auto;');
 explain.innerText = 'Druk op de knop om de code te kopiëren en plak die vervolgens in WordPress/Honk op de gewenste plek in het artikel:';
 copyFrom.appendChild(explain);
-/*actual code*/
-let code = document.createElement('p');
-code.setAttribute('style', 'font-family: monospace; width: 800px; margin: 5px auto 10px auto; border-style: dotted; border-width: 1px; border-color: #ccc;');
-code.setAttribute('id', 'embedcode');
-code.innerText = EMBEDCODE;
-copyFrom.appendChild(code);
 /*buttons*/
 let cp = document.createElement('button');
 cp.setAttribute('type', 'button');
@@ -68,6 +62,12 @@ cancel.addEventListener('click', function() {
 	document.body.removeChild(copyFrom);
 });
 copyFrom.appendChild(cancel);
+/*actual code*/
+let code = document.createElement('p');
+code.setAttribute('style', 'font-family: monospace; width: 800px; margin: 5px auto 10px auto; border-style: dotted; border-width: 1px; border-color: #ccc;');
+code.setAttribute('id', 'embedcode');
+code.innerText = EMBEDCODE;
+copyFrom.appendChild(code);
 document.body.appendChild(copyFrom);
 
 /*copy to clipboard and kill layer*/
