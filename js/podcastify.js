@@ -1,6 +1,6 @@
 /*create code*/
 let podcast, podcasturl, itunes, stitcher, spotify, castbox, rss;
-const URL = window.location.toString();
+const URL = window.location.toString().split('#')[0];
 const HEADLINE = document.getElementsByTagName('h1')[1].textContent;
 if (document.querySelector('.in-rubric-haagse-zaken')) {
 	podcast = 'NRC Haagse Zaken';
