@@ -1,4 +1,4 @@
-if (!TwitLnk) {
+if (!getTwitLnk) {
 	var getTwitLnk = function() {
 		let url = window.location.toString().split('?')[0].split('#')[0];
 		let date = new Date;
