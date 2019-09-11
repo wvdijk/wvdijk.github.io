@@ -1,8 +1,9 @@
 /*create code*/
-let podcast, podcasturl, itunes, stitcher, spotify, castbox, rss;
+let podcast, podcasturl, itunes, stitcher, spotify, castbox, rss, headline;
 const URL = window.location.toString().split('#')[0];
-const HEADLINE = document.getElementsByTagName('h1')[1].textContent;
+
 if (document.querySelector('.in-rubric-haagse-zaken')) {
+	headline = document.getElementsByTagName('h1')[1].textContent;
 	podcast = 'NRC Haagse Zaken';
 	podcasturl = 'https://www.nrc.nl/rubriek/haagse-zaken/';
 	itunes = 'https://itunes.apple.com/nl/podcast/haagse-zaken/id1205520865?l=en&mt=2';
@@ -10,8 +11,9 @@ if (document.querySelector('.in-rubric-haagse-zaken')) {
 	spotify = 'https://open.spotify.com/show/5UDty8uMg4IDiESuFNhC3k?si=jVrUjrucTHCaStTRpK3lZw';
 	castbox = 'https://castbox.fm/channel/NRC-Haagse-Zaken-id1054441';
 	rss = 'https://rss.art19.com/haagse-zaken';
-	console.log(podcast, podcasturl, itunes, stitcher, spotify, rss);
+	console.log(podcast, headline, podcasturl, itunes, stitcher, spotify, rss);
 } else if (document.querySelector('.in-rubric-onbehaarde-apen'))  {
+	headline = document.getElementsByTagName('h1')[1].textContent;
 	podcast = 'NRC Onbehaarde Apen';
 	podcasturl = 'https://www.nrc.nl/rubriek/onbehaarde-apen/';
 	itunes = 'https://itunes.apple.com/nl/podcast/onbehaarde-apen/id1361734727?mt=2';
@@ -19,8 +21,9 @@ if (document.querySelector('.in-rubric-haagse-zaken')) {
 	spotify = 'https://open.spotify.com/show/5EeJe2VXLddbALBcvmhOFv?si=X-Bx7neMR8aDZHXi9rDCQw';
 	castbox = 'https://castbox.fm/channel/NRC-Onbehaarde-Apen-id1208942';
 	rss = 'https://rss.art19.com/onbehaarde-apen';
-	console.log(podcast, podcasturl, itunes, stitcher, spotify, rss);
+	console.log(podcast, headline, podcasturl, itunes, stitcher, spotify, rss);
 } else if (document.querySelector('.in-rubric-podcast-vandaag'))  {
+	headline = document.getElementsByTagName('h1')[1].textContent;
 	podcast = 'NRC Vandaag';
 	podcasturl = 'https://www.nrc.nl/rubriek/podcast-vandaag/';
 	itunes = 'https://podcasts.apple.com/nl/podcast/vandaag/id1460234936';
@@ -28,12 +31,12 @@ if (document.querySelector('.in-rubric-haagse-zaken')) {
 	spotify = 'https://open.spotify.com/show/73vZPMVjxTqC02OYZdcCr7';
 	castbox = 'https://castbox.fm/channel/Vandaag-id2094393';
 	rss = 'https://rss.art19.com/vandaag';
-	console.log(podcast, podcasturl, itunes, stitcher, spotify, rss);
+	console.log(podcast, headline, podcasturl, itunes, stitcher, spotify, rss);
 } else {
 	alert('Deze podcast (her)ken ik niet...');
 }
 const EPISODE = document.querySelector('.art19-web-player').getAttribute('data-episode-id');
-const EMBEDCODE = `<div style="font-family: LFT Etica, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif; font-style: italic;"><p style="margin-bottom: 1.1em;">Luister ook naar <a href="${URL}">deze aflevering</a> van onze podcastserie <a href="${podcasturl}">${podcast}</a>: ${HEADLINE}</p>
+const EMBEDCODE = `<div style="font-family: LFT Etica, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif; font-style: italic;"><p style="margin-bottom: 1.1em;">Luister ook naar <a href="${URL}">deze aflevering</a> van onze podcastserie <a href="${podcasturl}">${podcast}</a>: ${headline}</p>
 <link href="https://web-player.art19.com/assets/current.css" media="screen" rel="stylesheet" type="text/css">
 <script src="https://web-player.art19.com/assets/current.js" type="text/javascript"></script>
 <div class="art19-web-player awp-medium awp-theme-light-custom" data-episode-id="${EPISODE}" data-primary-color="#333333"></div>
