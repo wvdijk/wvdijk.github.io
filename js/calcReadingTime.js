@@ -1,3 +1,4 @@
+// bookmarklet based on https://www.nrc.nl/static/front/js/src/utils/calcReadingTime.js
 let calcReadingTime = function(elem) {
 	let words = elem.textContent.split(' ');
 	let seconds = (words.length / 300) * 60;
