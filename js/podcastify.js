@@ -2,9 +2,8 @@ function main() {
 	/*create code*/
 	let podcast, podcasturl, itunes, stitcher, spotify, castbox, rss, headline;
 	const URL = window.location.toString().split('#')[0];
-
+	headline = document.querySelector('h1[data-flowtype="headline"]').textContent;
 	if (document.querySelector('.in-rubric-haagse-zaken')) {
-		headline = document.getElementsByTagName('h1')[1].textContent;
 		podcast = 'NRC Haagse Zaken';
 		podcasturl = 'https://www.nrc.nl/rubriek/haagse-zaken/';
 		itunes = 'https://itunes.apple.com/nl/podcast/haagse-zaken/id1205520865?l=en&mt=2';
@@ -14,7 +13,6 @@ function main() {
 		rss = 'https://rss.art19.com/haagse-zaken';
 		console.log(podcast, headline, podcasturl, itunes, stitcher, spotify, rss);
 	} else if (document.querySelector('.in-rubric-onbehaarde-apen'))  {
-		headline = document.getElementsByTagName('h1')[1].textContent;
 		podcast = 'NRC Onbehaarde Apen';
 		podcasturl = 'https://www.nrc.nl/rubriek/onbehaarde-apen/';
 		itunes = 'https://itunes.apple.com/nl/podcast/onbehaarde-apen/id1361734727?mt=2';
@@ -24,7 +22,6 @@ function main() {
 		rss = 'https://rss.art19.com/onbehaarde-apen';
 		console.log(podcast, headline, podcasturl, itunes, stitcher, spotify, rss);
 	} else if (document.querySelector('.in-rubric-podcast-vandaag'))  {
-		headline = document.getElementsByTagName('h1')[1].textContent;
 		podcast = 'NRC Vandaag';
 		podcasturl = 'https://www.nrc.nl/rubriek/podcast-vandaag/';
 		itunes = 'https://podcasts.apple.com/nl/podcast/vandaag/id1460234936';
