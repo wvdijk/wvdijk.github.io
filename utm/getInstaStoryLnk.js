@@ -1,5 +1,5 @@
 if (!getInstaStoryLnk) {
-	var getInstaLnk = function() {
+	var getInstaStoryLnk = function() {
 		let url = window.location.toString().split('?')[0].split('#')[0];
 		let date = new Date;
 		let y = date.getFullYear();
