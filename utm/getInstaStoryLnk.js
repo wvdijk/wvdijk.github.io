@@ -1,4 +1,4 @@
-if (!getInstaLnk) {
+if (!getInstaStoryLnk) {
 	var getInstaLnk = function() {
 		let url = window.location.toString().split('?')[0].split('#')[0];
 		let date = new Date;
@@ -7,8 +7,8 @@ if (!getInstaLnk) {
 		m < 10 ? m = `0${m}` : m = m;
 		let d = date.getDate();
 		d < 10 ? d = `0${d}` : d = d;
-		let utm = `${url}?utm_source=social&utm_medium=instagram&utm_campaign=timeline&utm_term=${y}${m}${d}`;
-		prompt('Gebruik deze link in je post op Instagram:', utm);
+		let utm = `${url}?utm_source=social&utm_medium=instagram&utm_campaign=stories&utm_term=${y}${m}${d}`;
+		prompt('Gebruik deze link in je story op Instagram:', utm);
 	}
 };
-getInstaLnk();
+getInstaStoryLnk();
