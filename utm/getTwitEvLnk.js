@@ -1,14 +1,8 @@
-if (!getTwitEvLnk) {
-	var getTwitEvLnk = function() {
+if (!getEvergreenLnk) {
+	var getEvergreenLnk = function() {
 		let url = window.location.toString().split('?')[0].split('#')[0];
-		let date = new Date;
-		let y = date.getFullYear();
-		let m = date.getMonth() + 1;
-		m < 10 ? m = `0${m}` : m = m;
-		let d = date.getDate();
-		d < 10 ? d = `0${d}` : d = d;
-		let utm = `${url}?utm_source=social&utm_medium=twitter&utm_campaign=evergreen&utm_term=${y}${m}${d}`;
-		prompt('Gebruik deze link in je post op Twitter:', utm);
-	}	
+		prompt('Gebruik deze link in je Evergreen-post', `${url}?utm_source=social&utm_campaign=evergreen`);
+	}
 };
-getTwitEvLnk();
+getEvergreenLnk();
+/* overwritten w generic evergreen bookmarklet for backward compatibility */
