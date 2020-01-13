@@ -4,4 +4,4 @@ if (!getEvergreenLnk) {
 		prompt(`Gebruik deze link in je Evergreen-post: ${url}?utm_source=social&utm_campaign=evergreen`);
 	}
 };
-getEvergeenLnk();
+getEvergreenLnk();
