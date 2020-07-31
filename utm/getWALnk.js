@@ -7,7 +7,7 @@ if (!getWALnk) {
 		m < 10 ? m = `0${m}` : m = m;
 		let d = date.getDate();
 		d < 10 ? d = `0${d}` : d = d;
-		let utm = `${url}?utm_source=social&utm_medium=whatsapp&utm_campaign=whatsapp&utm_term=${y}${m}${d}`;
+		let utm = `${url}?utm_source=whatsapp&utm_medium=social&utm_campaign=whatsapp&utm_term=${y}${m}${d}`;
 		prompt('Maak hier op https://nrch.nl/nieuwe een short-url van met utm codes voor WhatsApp', utm);
 	}
 };
