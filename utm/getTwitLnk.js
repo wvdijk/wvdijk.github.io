@@ -7,7 +7,7 @@ if (!getTwitLnk) {
 		m < 10 ? m = `0${m}` : m = m;
 		let d = date.getDate();
 		d < 10 ? d = `0${d}` : d = d;
-		let utm = `${url}?utm_source=twitte&utm_medium=social&utm_campaign=twitter&utm_term=${y}${m}${d}`;
+		let utm = `${url}?utm_source=twitter&utm_medium=social&utm_campaign=twitter&utm_term=${y}${m}${d}`;
 		prompt('Gebruik deze link in je post op Twitter:', utm);
 	}
 };
