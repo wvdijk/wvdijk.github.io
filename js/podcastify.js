@@ -34,7 +34,7 @@ function main() {
 		let ricky = document.createElement('div');
 		ricky.setAttribute('style', 'color: #000; background: #fff; border-style: solid; border-width: 2px; border-color: #000; position: fixed; width: 600px; height: 480px; top: 100px; left: 100px; z-index: 999 !important;');
 		let egg = document.createElement('div');
-		egg.setAttribute('style', 'margin-top: 5px; margin-left: 20px; margin-right: 20px;'); 
+		egg.setAttribute('style', 'margin-top: 5px; margin-left: 20px; margin-right: 20px;');
 		egg.innerHTML = `<p style="font-style: italic;">Je gebruikt deze knop niet hier, maar als je een aflevering op je scherm hebt van <a href="https://www.nrc.nl/rubriek/podcast-vandaag/">NRC Vandaag</a>, <a href="https://www.nrc.nl/rubriek/onbehaarde-apen/">NRC Onbehaarde Apen</a> of <a href="https://www.nrc.nl/rubriek/haagse-zaken/">NRC Haagse Zaken</a>.</p>`;
 		let vid = document.createElement('div');
 		vid.innerHTML = `<iframe style="margin-left: 20px;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
@@ -59,7 +59,7 @@ function main() {
 	<link href="https://web-player.art19.com/assets/current.css" media="screen" rel="stylesheet" type="text/css">
 	<script src="https://web-player.art19.com/assets/current.js" type="text/javascript"></script>
 	<div class="art19-web-player awp-medium awp-theme-light-custom" data-episode-id="${EPISODE}" data-primary-color="#333333"></div>
-	<span style="font-size: smaller;">U kunt zich ook <a href="${itunes}" rel="noopener" target="_blank">abonneren via Apple Podcasts</a>, <a href="${stitcher}" rel="noopener" target="_blank">Stitcher</a>, <a href="${spotify}" rel="noopener" target="_blank">Spotify</a>, <a href="${castbox}">Castbox</a> of <a href="${rss}" rel="noopener" target="_blank">RSS</a>.</div>`;
+	<span style="font-size: smaller;">U kunt zich ook <a href="${itunes}" rel="noopener" target="_blank">abonneren via Apple Podcasts</a>, <a href="${stitcher}" rel="noopener" target="_blank">Stitcher</a>, <a href="${spotify}" rel="noopener" target="_blank">Spotify</a>, <a href="${castbox}">Castbox</a> of <a href="${rss}" rel="noopener" target="_blank">RSS</a>.</span></div>`;
 
 	/*create layer*/
 	let copyFrom = document.createElement('div');
