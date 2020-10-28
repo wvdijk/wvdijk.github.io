@@ -14,7 +14,7 @@ Om een artikel te kunnen bewerken in Honk als de bookmarklet niet beschikbaar is
 [js/calcReadingTime.js](js/calcReadingTime.js)  
 Bookmarklet om de gemiddelde leestijd (in seconden) te berekenen voor het artikel op je scherm. Gebruikt dezelfde code als de site.
 
-[js/getJpegs.js](js/getJpegs.js)  
+[js/getJpeg.js](js/getJpeg.js)  
 Om makkelijk een jpeg van de featured image te downloaden. Handig nu we standaard WebP serveren.
 
 [js/leesook.js](js/leesook.js)  
