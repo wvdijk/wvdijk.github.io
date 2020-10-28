@@ -8,16 +8,16 @@ Deze bookmarklets zijn als knop installeerbaar via [https://www.nrc.nl/lezersdes
 
 ## Beschrijving
 [editinhonk.html](/editinhonk.html)  
-[js/editinhonk.js](js/editinhonk.js])  
+[js/editinhonk.js](js/editinhonk.js)  
 Om een artikel te kunnen bewerken in Honk als de bookmarklet niet beschikbaar is, bijvoorbeeld in een mobiele browser. Zonder GN4-check.
 
-[js/calcReadingTime.js](js/calcReadingTime.js])  
+[js/calcReadingTime.js](js/calcReadingTime.js)  
 Bookmarklet om de gemiddelde leestijd (in seconden) te berekenen voor het artikel op je scherm. Gebruikt dezelfde code als de site.
 
-[js/getJpegs.js](js/getJpegs.js])  
+[js/getJpegs.js](js/getJpegs.js)  
 Om makkelijk een jpeg van de featured image te downloaden. Handig nu we standaard WebP serveren.
 
-[js/leesook.js](js/leesook.js])  
+[js/leesook.js](js/leesook.js)  
 Genereer lees-ook-code voor het artikel dat je op je scherm hebt, om te plakken in Honk:
 ```html
 <div class="lees-ook">Lees ook <a href="link">Kop</a></div>
