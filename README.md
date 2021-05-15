@@ -24,7 +24,10 @@ Genereer lees-ook-code voor het artikel dat je op je scherm hebt, om te plakken 
 ```
 
 [js/podcastify.js](js/podcastify.js)  
-Genereer uitgebreide embedcode van de NRC-podcast die je op je scherm hebt, om te plakken in een (gerelateerd) artikel in Honk. Is helaas uitgerekend deze week stuk gegaan, want de podcastpostjes zijn veranderd met de introductie van NRC Audio.
+Genereer luister-ook-code van de NRC-podcast die je op je scherm hebt, om te plakken in een (gerelateerd) artikel in Honk. Nieuwe versie, gebaseerd op [js/leesook.js](js/leesook.js), werkt ook met NRC Audio:
+```html
+<div class="luister-ook" data-article-url="link"></div>
+```
 
 [js/topics.js](js/topics.js)  
 Deze heeft niks met NRC te maken, maar je kunt er alle artikelen van alle Persgroep-titels mee opzoeken op hun platform Topics.nl. dan heb je natuurlijk wel toegang tot Topics nodig, via een abonnement op een van hun kranten. Maar als je dan op de site van een ándere Persgroepkrant op de betaalmuur stuit, kun je de Topics-versie van hetzelfde stuk met deze bookmarklet vinden en lezen. Installatie:
