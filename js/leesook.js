@@ -1,5 +1,5 @@
 /*create code*/
-const URL = window.location.toString().split('#')[0];
+const URL = window.location.toString().split(/[#\?]+/)[0];
 const HEADLINE = document.title.slice(0,-6);
 const LEESOOK = decodeURIComponent(`<div class="lees-ook">Lees ook <a href="${URL}">${HEADLINE}</a></div>`);
 

@@ -1,5 +1,5 @@
 /*create code*/
-const URL = window.location.toString().split('#')[0];
+const URL = window.location.toString().split(/[#\?]+/)[0];
 const LUISTEROOK = decodeURIComponent(`<div class="luister-ook" data-article-url="${URL}"></div>`);
 
 /*create layer*/
