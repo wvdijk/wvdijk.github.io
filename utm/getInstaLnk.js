@@ -1,6 +1,6 @@
 if (!getInstaLnk) {
 	var getInstaLnk = function() {
-		let url = window.location.toString().split('?')[0].split('#')[0];
+		let url = window.location.toString().split(/[#\?]+/)[0];
 		let date = new Date;
 		let y = date.getFullYear();
 		let m = date.getMonth() + 1;
