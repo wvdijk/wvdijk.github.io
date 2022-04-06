@@ -29,7 +29,7 @@ copyFrom.appendChild(cancel);
 let code = document.createElement('p');
 code.setAttribute('style', 'font-family: monospace; width: 600px; margin: 5px auto 10px auto; border-style: dotted; border-width: 1px; border-color: #ccc;');
 code.setAttribute('id', 'embedcode');
-code.innerText = LUISTEROOK;
+code.innerText = YTEMBED;
 copyFrom.appendChild(code);
 
 document.body.appendChild(copyFrom);
