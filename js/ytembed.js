@@ -1,6 +1,6 @@
 /*create code*/
-const VIDEOID = window.location.toString().split(/\=+/).pop();
-const YTEMBED = decodeURIComponent(`<div class="videowrapper"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="nmt-lazy-if-cookies-allowed" data-src="https://www.youtube-nocookie.com/embed/${VIDEOID}?rel=0&feature=oembed" frameborder="0" wmode="transparent"></iframe></div>`);
+VIDEOID = window.location.toString().split(/\=+/).pop();
+YTEMBED = decodeURIComponent(`<div class="videowrapper"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="nmt-lazy-if-cookies-allowed" data-src="https://www.youtube-nocookie.com/embed/${VIDEOID}?rel=0&feature=oembed" frameborder="0" wmode="transparent"></iframe></div>`);
 
 /*create layer*/
 copyFrom = document.createElement('div');
@@ -8,7 +8,7 @@ copyFrom.setAttribute('style', 'color: #000; background: #fff; border-style: sol
 copyFrom.setAttribute('id', 'copyfrom');
 explain = document.createElement('p');
 explain.setAttribute('style', 'width: 600px; margin: 25px auto 10px auto;');
-explain.innerText = 'Druk op de knop om de code te kopiëren en plak die vervolgens in WordPress/Honk op de gewenste plek in het artikel:';
+explain.innerText = 'Druk op de knop om de code te kopiëren en plak die vervolgens in GN4 als HTML Embed Code op de gewenste plek in het artikel:';
 copyFrom.appendChild(explain);
 /*buttons*/
 cp = document.createElement('button');
