@@ -1,4 +1,4 @@
-if (!getFBLnk) {
+/* if (!getFBLnk) {
 	var getFBLnk = function() {
 		let url = window.location.toString().split(/[#\?]+/)[0];
 		let date = new Date;
@@ -12,3 +12,5 @@ if (!getFBLnk) {
 	}
 };
 getFBLnk();
+*/
+alert('Deze bookmarklet wordt niet meer onderhouden. Installeer eenmalig de nieuwe versie op nrc.nl/lezersdeskknoppen');

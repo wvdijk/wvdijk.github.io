@@ -2,6 +2,8 @@
 
 Dit is een collectie bookmarklets (e.a) die ik in de loop der jaren heb gemaakt voor het online team.
 
+Van de meeste van deze knoppen wordt de huidige versie onderhouden door het NMT (en installeerbaar via de link hieronder). De versies in deze repo zijn dus niet meer actueel.
+
 ## Installatie
 
 Deze bookmarklets zijn als knop installeerbaar via [https://www.nrc.nl/lezersdeskknoppen](https://www.nrc.nl/lezersdeskknoppen)
@@ -9,7 +11,7 @@ Deze bookmarklets zijn als knop installeerbaar via [https://www.nrc.nl/lezersdes
 ## Beschrijving
 [editinhonk.html](/editinhonk.html)  
 [js/editinhonk.js](js/editinhonk.js)  
-Om een artikel te kunnen bewerken in Honk als de bookmarklet niet beschikbaar is, bijvoorbeeld in een mobiele browser. Zonder GN4-check.
+Om een artikel te kunnen bewerken in Honk als de bookmarklet niet beschikbaar is, bijvoorbeeld in een mobiele browser. Checkt niet of een artikel al eerder in Wordpress is geopend, gebruik op eigen risico.
 
 [js/calcReadingTime.js](js/calcReadingTime.js)  
 Bookmarklet om de gemiddelde leestijd (in seconden) te berekenen voor het artikel op je scherm. Gebruikt dezelfde code als de site.

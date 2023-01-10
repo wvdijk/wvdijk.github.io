@@ -1,9 +1,10 @@
-/*create code*/
+/*
+//create code
 const URL = window.location.toString().split(/[#\?]+/)[0];
 const HEADLINE = document.title.slice(0,-6);
 const LEESOOK = decodeURIComponent(`<div class="lees-ook">Lees ook <a href="${URL}">${HEADLINE}</a></div>`);
 
-/*create layer*/
+//create layer
 let copyFrom = document.createElement('div');
 copyFrom.setAttribute('style', 'color: #000; background: #fff; border-style: solid; border-width: 2px; border-color: #000; position: fixed; width: 650px; top: 100px; left: 100px; z-index: 999 !important;');
 copyFrom.setAttribute('id', 'copyfrom');
@@ -11,7 +12,7 @@ let explain = document.createElement('p');
 explain.setAttribute('style', 'width: 600px; margin: 25px auto 10px auto;');
 explain.innerText = 'Druk op de knop om de code te kopiëren en plak die vervolgens in WordPress/Honk op de gewenste plek in het artikel:';
 copyFrom.appendChild(explain);
-/*buttons*/
+//buttons
 let cp = document.createElement('button');
 cp.setAttribute('type', 'button');
 cp.setAttribute('style', 'margin-left: 25px; margin-bottom: 25px;');
@@ -26,7 +27,7 @@ cancel.addEventListener('click', function() {
 	document.body.removeChild(copyFrom);
 });
 copyFrom.appendChild(cancel);
-/*actual code*/
+//actual code
 let code = document.createElement('p');
 code.setAttribute('style', 'font-family: monospace; width: 600px; margin: 5px auto 10px auto; border-style: dotted; border-width: 1px; border-color: #ccc;');
 code.setAttribute('id', 'embedcode');
@@ -35,7 +36,7 @@ copyFrom.appendChild(code);
 
 document.body.appendChild(copyFrom);
 
-/*copy to clipboard and kill layer*/
+//copy to clipboard and kill layer
 function copyCode(elem) {
     let text = document.getElementById('embedcode');
     let selection = window.getSelection();
@@ -46,3 +47,5 @@ function copyCode(elem) {
     document.execCommand('copy');
     document.body.removeChild(copyFrom)
 }
+*/
+alert('Deze bookmarklet wordt niet meer onderhouden. Installeer eenmalig de nieuwe versie op nrc.nl/lezersdeskknoppen');

@@ -1,4 +1,4 @@
-if (!getWALnk) {
+/*if (!getWALnk) {
 	var getWALnk = function() {
 		let url = window.location.toString().split(/[#\?]+/)[0];
 		let date = new Date;
@@ -12,3 +12,5 @@ if (!getWALnk) {
 	}
 };
 getWALnk();
+*/
+alert('Deze knop wordt niet meer onderhouden. Installeer eenmalig de nieuwe versie op nrc.nl/lezersdeskknoppen');
