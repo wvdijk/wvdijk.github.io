@@ -1,4 +1,4 @@
-// bookmarklet based on https://www.nrc.nl/static/front/js/src/utils/calcReadingTime.js
+/* bookmarklet based on https://www.nrc.nl/static/front/js/src/utils/calcReadingTime.js
 let calcReadingTime = function(elem) {
 	let words = elem.textContent.split(' ');
 	let seconds = (words.length / 300) * 60;
@@ -15,3 +15,5 @@ let calcReadingTime = function(elem) {
 
 let articleBody = document.getElementsByClassName('article__content')[0];
 alert(`De berekende leestijd voor dit artikel is ${calcReadingTime(articleBody)} seconden`);
+*/
+alert('Deze bookmarklet wordt niet meer onderhouden. Installeer eenmalig de nieuwe versie op nrc.nl/lezersdeskknoppen');
